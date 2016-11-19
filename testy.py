@@ -5,6 +5,7 @@ alph_dict1 = dict.fromkeys('abcdefghijklmnopqrstuvwxyz', 0)
 print(alph_dict==alph_dict1)
 #
 #
+#
 
 # a='aabc'
 #
