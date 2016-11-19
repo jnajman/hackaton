@@ -4,7 +4,8 @@
 #The credit card number we want to validate. This program works with *most* credit card numbers.
 
 #card_number = str(input("Enter credit card number you want to check: "))
-card_number = '4012888888881881'
+#card_number = '4012888888881881'
+card_number = '5189987133424804'
 
 # Reverse the credit card number and take the digits in the odd positions and then the digits in the even positions
 #
@@ -19,10 +20,10 @@ card_number = '4012888888881881'
 #   then the credit card number is valid.
 '''
 
-reversed_card_number = card_number[::-1]
+reversed_card_number =
 
-odd_digits = reversed_card_number[::2]
-even_digits =reversed_card_number[1::2]
+odd_digits =
+even_digits =
 
 total = 0
 for  # add up all odd digits
@@ -48,3 +49,28 @@ else:
 
 #--------------------origin---------------------
 '''
+reversed_card_number = card_number[::-1]
+
+odd_digits = reversed_card_number[::2]
+even_digits =reversed_card_number[1::2]
+
+total = 0
+for o_digit in odd_digits:
+    total += int(o_digit)
+
+#print(total)
+
+for e_digit in even_digits:
+    multiplied =int(e_digit)*2
+
+    if int(multiplied)>9:
+        total +=(int(multiplied)-9)
+    else:
+        total +=int(multiplied)
+
+#print(total)
+if  (total%10)==0:
+    print('Valid!')
+
+else:
+    print('Your credit card number is not valid. Please check for any typos.')
