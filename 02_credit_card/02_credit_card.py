@@ -4,8 +4,8 @@
 #The credit card number we want to validate. This program works with *most* credit card numbers.
 
 #card_number = str(input("Enter credit card number you want to check: "))
-#card_number = '4012888888881881'
-card_number = '5189987133424804'
+card_number = '4012888888881881'
+
 
 # Reverse the credit card number and take the digits in the odd positions and then the digits in the even positions
 #
