@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13ecbb34-f208-4645-8a55-690f538dc5e0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03_recursion/03_draw_01_nautilus.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03_recursion/03_recursion_01_factorial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/03_recursion/03_recursion_02_fibonacci.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/04_anagrams/04_anagrams_01.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/03_recursion/03_recursion.py" afterPath="$PROJECT_DIR$/05_hangman/05_hangman_01.py" />
+    <list default="true" id="13ecbb34-f208-4645-8a55-690f538dc5e0" name="Default" comment="aaa">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/02_credit_card/02_credit_card.py" afterPath="$PROJECT_DIR$/02_credit_card/02_credit_card.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testy.py" afterPath="$PROJECT_DIR$/testy.py" />
     </list>
     <ignored path="hackaton.iws" />
@@ -61,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testy.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testy.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state relative-caret-position="132">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -81,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="05_hangman_01.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="05_hangman_01.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/05_hangman/05_hangman_01.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -122,9 +116,9 @@
         <option value="$PROJECT_DIR$/03_recursion/03_recursion_02_fibonacci.py" />
         <option value="$PROJECT_DIR$/03_recursion/03_recursion.py" />
         <option value="$PROJECT_DIR$/03_recursion/03_draw_01_nautilus.py" />
-        <option value="$PROJECT_DIR$/testy.py" />
         <option value="$PROJECT_DIR$/04_anagrams/04_anagrams_01.py" />
         <option value="$PROJECT_DIR$/05_hangman/05_hangman_01.py" />
+        <option value="$PROJECT_DIR$/testy.py" />
       </list>
     </option>
   </component>
@@ -198,7 +192,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_d7effa1a4a322478cd29c826b52a0c118ad3db11/cmd/git.exe" />
   </component>
@@ -462,14 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1479549721186</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="aaa">
+      <created>1479571622892</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1479571622892</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -576,14 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/04_anagrams/04_anagrams_01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -596,6 +589,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
