@@ -1,17 +1,10 @@
 
-alph_dict = dict.fromkeys('abcdefghijklmnopqrstuvwxyz', 0)
-alph_dict1 = dict.fromkeys('abcdefghijklmnopqrstuvwxyz', 0)
+a='abcdef'
+# a.join('')
 
-print(alph_dict==alph_dict1)
-#
-#
-#
+# print(' '.join(list(a)))
+print('g' in a)
 
-# a='aabc'
-#
-# for i in range(len(a)):
-#     # print('ahoj')
-#     alph_dict[a[i]]+=1
-#
-# print(alph_dict)
+myword_alph_dict=dict.fromkeys('abcdefghijklmnopqrstuvwxyz', 0)
 
+print('0' not in myword_alph_dict)
