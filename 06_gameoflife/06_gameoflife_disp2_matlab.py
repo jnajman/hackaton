@@ -26,7 +26,7 @@ height=100
 # grid = [[0 for x in range(width)] for y in range(height)]
 grid=numpy.zeros((width,height),int)
 
-#glider:
+# #glider:
 grid[0][2]=1
 grid[1][3]=1
 grid[2][1]=1
@@ -42,8 +42,8 @@ for step in range(100):#kroky simulace
 
     # for i in range(len(grid)): #vypise matici
     #     print(grid[i])
-
-    plt.imshow(grid, interpolation='none') #vykresli matici
+    plt.cla()
+    plt.imshow(grid, cmap=plt.get_cmap('viridis'), interpolation='none') #vykresli matici
     f.canvas.draw()
 
     # input('pauza')      #---PAUZA---
