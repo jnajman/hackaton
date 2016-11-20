@@ -4,7 +4,7 @@ try:
     # print(f.readlines())
     # print(dictionary)
 
-    myword='airmen'
+    myword='tea'
 
     # print(len(dictionary[20]))
     # print(dictionary[12359])
