@@ -1,0 +1,116 @@
+<html lang="en">
+    
+<!-- Mirrored from hack.engeto.com/tasks/semanticdiff by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Nov 2016 09:37:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">
+        <title>Task: Semantic diff</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="main-container">
+            <section class="page-title page-title-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="uppercase mb0">Task: Semantic diff</h3>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="pt0 pb40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Level:</span>
+                            <h6 class="uppercase mb0">Advanced</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Time allocation:</span>
+                            <h6 class="uppercase mb0">2 days</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Lines of code:</span>
+                            <h6 class="uppercase mb0">1000+</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Category:</span>
+                            <h6 class="uppercase mb0">Tool</h6>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section>
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">Description</h4>
+                            <p>
+Everyone knows the <b>diff</b> tool, right? The old-school utility taking two files on input and producing how the two files differ from each other. Together with another old-school utility, <b>patch</b>, it pretty much enabled distributed, collaborative software development.<br/> 
+
+But comparing source code as text should not be the end of it. Python code has rules and structure. It has entities like modules, classes and methods. It is possible to compare two versions of a Python project as programs, not as text, taking into account the semantics of the code. Which modules, classes or methods were changed, which were added, removed or moved around. What changed in the entities: were interfaces or contracts changed, or just implementation? Was is core of the program, or some weird, rarely used plugin?<br/>
+
+The goal of this project is to produce a tool that understand Python code and is able to semantically compare two Python program versions (like a baseline and a pull request).
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">How to start</h4>
+                            <p>
+Programs are trees (ASTs) and there are good tools that can read Python into ASTs for you already (<a href="https://pypi.python.org/pypi/astroid">astroid</a>). Simple semantic diff is probably a tree graph difference problem, for which there might be some nice solutions already in some graph library. Then it’s mostly a matter of determining what changes to look for, what to do with them and how to present them. Plus dealing with pseudo-differences like moving code around, renaming etc.
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">Further ideas</h4>
+                            <h5>Program that describes a change in a natural language, just as a programmer would</h5>
+                            <h5>Program that extracts semantic properties of changes, for example to create a data set describing evolution of a software project that could be analysed for insights.</h5>
+                            <h5>A GitHub-integrated service producing useful information for PR reviewers</h5>
+                            <h5>Integration with pylint that would allow pylint to focus only on the code that was changed.</h5>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">Random resources and inspiration</h4>
+                            <h5 class="uppercase"><a href="https://www.semanticmerge.com/">Semantic merge</a></h5>
+                            <h5 class="uppercase"><a href="http://stackoverflow.com/questions/523307/semantic-diff-utilities">StackOverflow discussion</a></h5>
+                            <h5 class="uppercase"><a href="https://github.com/yinwang0/psydiff">psydiff</a></h5>
+                            <h5 class="uppercase"><a href="https://yinwang0.wordpress.com/2012/01/03/ydiff/">ydiff</a></h5>
+                        </div>
+                    </div>
+                    <!--end of row-->
+            </section>
+        </div>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/flickr.html"></script>
+        <script src="../js/flexslider.min.js"></script>
+        <script src="../js/lightbox.min.js"></script>
+        <script src="../js/masonry.min.js"></script>
+        <script src="../js/twitterfetcher.min.js"></script>
+        <script src="../js/spectragram.min.js"></script>
+        <script src="../js/ytplayer.min.js"></script>
+        <script src="../js/countdown.min.js"></script>
+        <script src="../js/smooth-scroll.min.js"></script>
+        <script src="../js/parallax.js"></script>
+        <script src="../js/scripts.js"></script>
+    </body>
+
+<!-- Mirrored from hack.engeto.com/tasks/semanticdiff by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Nov 2016 09:37:26 GMT -->
+</html>

@@ -1,0 +1,170 @@
+<html lang="en">
+    
+<!-- Mirrored from hack.engeto.com/tasks/labyrinth by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Nov 2016 09:37:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">
+        <title>Task: Labyrinth</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="main-container">
+            <section class="page-title page-title-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="uppercase mb0">Task: Labyrinth</h3>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="pt0 pb40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Level:</span>
+                            <h6 class="uppercase mb0">Advanced Beginners</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Time allocation:</span>
+                            <h6 class="uppercase mb0">2 - 5 hours</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Lines of code:</span>
+                            <h6 class="uppercase mb0">50 - 200</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Category:</span>
+                            <h6 class="uppercase mb0">game</h6>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section>
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                          <h4 class="uppercase">Description</h4>
+                            <p>
+                            Labyrinths are part of many games. Creating them can be tricky as well as finding the way out. Finding a route from place A to place B has many other use cases (or better the shortest one), like navigations, self-driven cars and more.
+                            This task will provide you an introduction to the topic of finding paths. First you will be given few labyrinths - mazes in which your program will have to find the path from point A to point B. You will need to implement algorithms as breadth first search of depth first search (or you can use any other you prefer). </p>
+
+                            <p>The following are your tasks:</p>
+                            <ol>
+                                <li>Download the file <a href="mazes.py">mazes.py</a>. The file contains mazes, your future script should be able to traverse</li>
+                                <li>Implement function that will take maze as argument and will return a string representing the sequence of steps (example: 'SSSSEEENEESS'- S = South, N = North etc.) leading  from the starting point to the goal. Permitted are only moves up - 'S', down - 'N', left - 'W', right - 'E'.</li>
+                                <li>Implement the function that will generate randomly distributed maze</li>
+                                <li>Implement a function that will depict the maze in ASCII art</li>
+                                <li>Put it all together into one program that will generate random maze, determine the starting point and end point, then find the shortest path and lastly print it all to the command line in ASCII art</li>
+                            
+                            <p>Prepared mazes are represented by lists of lists of zeros and ones. Ones represent walls and zeros are paths which you can use to move on</p>
+
+                            <pre>
+       [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1],
+        [1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1],
+        [1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1],
+        [1, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1],
+        [1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1],
+        [1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+        [1, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1],
+        [1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1],
+        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]</pre>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">Sample usage</h4>
+                            <p>Program returning the path from point A to B</p>
+                            <pre>[test@test ]$ ./find_path.py
+'SSSSEEEENNNNWNNEEEESSS'
+</pre>
+    
+
+                            <p>Progam to generate maze in ASCII art</p>
+                            <pre>[test@test ]$ ./generate_maze.py
++--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+|     |              |     |        |  |        |
++  +  +  +--+--+  +  +  +  +  +--+  +  +  +--+  +
+|  |     |  |     |     |  |  |     |        |  |
++  +--+--+  +  +--+--+--+  +  +  +--+--+--+--+  +
+|        |  |  |           |  |  |        |     |
++--+--+  +  +  +--+  +--+--+  +  +  +--+  +  +--+
+|     |  |  |     |        |  |  |  |     |     |
++  +  +  +  +--+  +--+--+  +  +  +  +  +--+--+  +
+|  |  |     |     |     |     |     |  |     |  |
++  +  +--+  +  +--+  +  +--+--+--+--+  +  +  +  +
+|  |     |  |  |     |  |           |     |     |
++  +--+--+--+  +  +--+  +  +  +--+--+--+--+--+  +
+|     |     |     |     |  |                 |  |
++--+  +  +  +--+--+  +--+  +--+--+--+--+--+  +  +
+|        |           |                    |     |
++--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+</pre>
+
+                            <p>Progam to generate maze in ASCII art</p>
+                            <pre>[test@test ]$ ./solve_maze.py
++--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+|xxxxx|xxxxxxxxxxxxx |xxxxx|xxxxxxxx|  |        |
++  +  +x +--+--+  +x + x+ x+x +--+ x+  +  +--+  +
+|  | x x |  |     |xxxxx| x|x |xxxxx|        |  |
++  +--+--+  +  +--+--+--+ x+x +x +--+--+--+--+  +
+|        |  |  |   xxxxxxxx|x |x |xxxxxxxx|     |
++--+--+  +  +  +--+x +--+--+x +x +x +--+ x+  +--+
+|     |  |  |     |xxxxxxxx|x |x |x |xxxxx|     |
++  +  +  +  +--+  +--+--+ x+x +x +x +x +--+--+  +
+|  |  |     |     |     | x x |xxxxx|x | x x |  |
++  +  +--+  +  +--+  +  +--+--+--+--+x + x+x +  +
+|  |     |  |  |     |  |           |xxxxx|xxxxx|
++  +--+--+--+  +  +--+  +  +  +--+--+--+--+--+ x+
+|     |     |     |     |  |                 | x|
++--+  +  +  +--+--+  +--+  +--+--+--+--+--+  + x+
+|        |           |                    |    x|
++--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+</pre>
+
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">Bonus</h4>
+                            <p>Create a pygame GUI maze generator</p>
+                            <p>Create a pygame GUI maze traversal
+                            
+                        </div>
+                    </div>
+                    <!--end of row-->
+            </section>
+        </div>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/flickr.html"></script>
+        <script src="../js/flexslider.min.js"></script>
+        <script src="../js/lightbox.min.js"></script>
+        <script src="../js/masonry.min.js"></script>
+        <script src="../js/twitterfetcher.min.js"></script>
+        <script src="../js/spectragram.min.js"></script>
+        <script src="../js/ytplayer.min.js"></script>
+        <script src="../js/countdown.min.js"></script>
+        <script src="../js/smooth-scroll.min.js"></script>
+        <script src="../js/parallax.js"></script>
+        <script src="../js/scripts.js"></script>
+    </body>
+
+<!-- Mirrored from hack.engeto.com/tasks/labyrinth by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Nov 2016 09:37:14 GMT -->
+</html>

@@ -1,0 +1,169 @@
+<html lang="en">
+    
+<!-- Mirrored from hack.engeto.com/tasks/bases by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Nov 2016 09:37:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">
+        <title>Task: Bases</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="main-container">
+            <section class="page-title page-title-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="uppercase mb0">Task: Conversion between bases</h3>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="pt0 pb40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Level:</span>
+                            <h6 class="uppercase mb0">All Beginners</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Time allocation:</span>
+                            <h6 class="uppercase mb0">30 minutes</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Lines of code:</span>
+                            <h6 class="uppercase mb0">20 - 50</h6>
+                        </div>
+                        <div class="col-sm-3 col-xs-6 mb-xs-24">
+                            <span>Category:</span>
+                            <h6 class="uppercase mb0">General IT</h6>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section>
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">Description <br/><br/> Level 1</h4>
+                            <pre>
+Task: Conversion between bases
+
+1) first, to create a function that takes in an integer and returns binary string
+2) then create a function that takes in a binary string and returns an integer
+
+you can test it with: decimal 22 = binary 10110
+
+good explanation of theory is here: http://www.sallyx.org/sally/c/c02.php
+
+Example:
+
+22 / 2 = 11 rest add to str     '0'
+11 / 2 =  5 rest add to str    '10'     
+ 5 / 2 =  2 rest add to str   '110'
+ 2 / 2 =  1 rest add to str  '0110'
+ 1 / 2 =  0 rest add to str '10110'
+  
+Example:
+decimal * 2 + digit  
+    
+      0 * 2 + 1 = 1
+      1 * 2 + 0 = 2
+      2 * 2 + 1 = 5
+      5 * 2 + 1 = 11
+     11 * 2 + 0 = 22
+
+                            </pre>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">Level 2</h4>
+                            <p>
+                            Understanding how conversion between numeric bases takes place is important in IT. This task can be automated
+                            by defining a function that will do the conversion for us. Your task will now be
+                              </p>
+                              <ol>
+                                <li>first, to create a function that takes in an integer and returns binary string</li>
+                                <li>then create a function that takes in a binary string and returns an integer</li>
+                                <li>and lastly create a more universal function that takes in two arguments: a string representation of a number any base you want to convert it to</li>
+                              </ol>
+                            So at the end you should have 3 functions defined.
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">Sample usage</h4>
+                            <p>
+
+                            </p>
+                            <p>Converting from decimal to binary:</p>
+                            <pre>[test@test ]$ python
+>>> from convert import decimal_to_bin
+>>> decimal_to_bin(10)
+>>> '1010'</pre>
+                            <p>Convertin from binary to decimal:</p>
+                            <pre>[test@test ]$ python
+>>> from convert import bin_to_decimal
+>>> bin_to_decimal('1010')
+>>> 10</pre>
+
+                            <p>Convertin from binary to decimal:</p>
+                            <pre>[test@test ]$ python
+>>> from convert import convert
+>>> convert(10,2)
+>>> '1010'
+>>> convert(10,16)
+>>> 'A'
+
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">Skeleton</h4>
+                            <p><a href="conv_skeleton.html">Skeleton of the code</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row mb80 mb-xs-40">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <h4 class="uppercase">Bonus</h4>
+                            <p>Function converting integers into Roman numerals</p>
+                            <p>You can encounter Roman numerals when parsing or generating texts. Therefore in case you want to generate a text that should contain roman numerals, you will also probably need to have a converting function.
+                          </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+            </section>
+        </div>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/flickr.html"></script>
+        <script src="../js/flexslider.min.js"></script>
+        <script src="../js/lightbox.min.js"></script>
+        <script src="../js/masonry.min.js"></script>
+        <script src="../js/twitterfetcher.min.js"></script>
+        <script src="../js/spectragram.min.js"></script>
+        <script src="../js/ytplayer.min.js"></script>
+        <script src="../js/countdown.min.js"></script>
+        <script src="../js/smooth-scroll.min.js"></script>
+        <script src="../js/parallax.js"></script>
+        <script src="../js/scripts.js"></script>
+    </body>
+
+<!-- Mirrored from hack.engeto.com/tasks/bases by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 20 Nov 2016 09:37:12 GMT -->
+</html>
