@@ -21,8 +21,8 @@ f.show()
 
 
     #-------------------------------------------------------------------------
-width=100
-height=100
+width=50
+height=50
 # grid = [[0 for x in range(width)] for y in range(height)]
 grid=numpy.zeros((width,height),int)
 
@@ -38,7 +38,7 @@ grid[2][3]=1
 # grid[2][2]=1
 # grid[2][3]=1
 
-for step in range(100):#kroky simulace
+for step in range(1000):#kroky simulace
 
     # for i in range(len(grid)): #vypise matici
     #     print(grid[i])
@@ -50,8 +50,8 @@ for step in range(100):#kroky simulace
 
     grid_new = numpy.zeros((width, height), int)  # nova matice (na zacatku vynulovana)
 
-    for m in range(height):#po radcich
-        for n in range(width):#po sloupcich
+    for m in range(width):#po radcich
+        for n in range(height):#po sloupcich
             num_of_neighbours=0 #vynulovat pred kazdou novou bunkou
             #
             #operace pro danou bunku:

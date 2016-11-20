@@ -38,6 +38,6 @@ while True:
 
     # pygame.draw.rect(screen, RED, [50, 50, 20, 20], 1)
     for m in range(10):
-       pygame.draw.line(screen, GREEN, [0, 10*m], [100, 100], 1)
+       pygame.draw.line(screen, GREEN, [10*m,0], [10*m,100], 1)
 
     pygame.display.flip()  # Display what was drawn this turn
