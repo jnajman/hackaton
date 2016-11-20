@@ -5,34 +5,13 @@ height=5
 # grid = [[0 for x in range(width)] for y in range(height)]
 grid=numpy.zeros((width,height),int)
 
-# print(len(grid))
-
+#glider:
 grid[0][2]=1
 grid[1][3]=1
 grid[2][1]=1
 grid[2][2]=1
 grid[2][3]=1
 
-# grid=numpy.zeros((5,5),int)
-# print(grid[1][1])
-
-# grid2=numpy.copy(grid)
-# grid3=numpy.copy(grid)
-#
-# grid2[4][4]=5
-#
-# grid=numpy.copy(grid2)
-
-# for i in range(len(grid)):
-#     print(grid[i])
-
-# num_of_neighbours <2 --> DIE
-# num_of_neighbours >3 --> DIE
-# num_of_neighbours 2 or 3 --> LIVE
-# num_of_neighbours == 3 --> RESSURECT (if dead)
-
-# input('pauza')
-#
 for step in range(10):#kroky simulace
 
     for i in range(len(grid)): #vykresli matici
@@ -106,9 +85,3 @@ for step in range(10):#kroky simulace
                     grid_new[m][n] = 1                              #...nech ji zit (jinak je defaultne mrtva)
 
     grid=numpy.copy(grid_new) #update zakladni grid
-
-
-# try:
-#     grid[100]
-# except IndexError:
-#     print('au')
