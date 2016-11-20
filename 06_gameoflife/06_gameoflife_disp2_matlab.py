@@ -1,7 +1,28 @@
 import numpy
+import matplotlib.pyplot as plt
 
-width=5
-height=5
+# init test data
+# grid=numpy.zeros((10,10),int)
+# grid[0][2]=1    #glider
+# grid[1][3]=1
+# grid[2][1]=1
+# grid[2][2]=1
+# grid[2][3]=1
+
+f = plt.figure()
+ax = f.gca()
+f.show()
+
+# for i in range(30):
+#     grid[0][0] += 1
+#     plt.imshow(grid,interpolation='none')
+#     f.canvas.draw()
+
+
+
+    #-------------------------------------------------------------------------
+width=100
+height=100
 # grid = [[0 for x in range(width)] for y in range(height)]
 grid=numpy.zeros((width,height),int)
 
@@ -17,12 +38,15 @@ grid[2][3]=1
 # grid[2][2]=1
 # grid[2][3]=1
 
-for step in range(10):#kroky simulace
+for step in range(100):#kroky simulace
 
-    for i in range(len(grid)): #vykresli matici
-        print(grid[i])
+    # for i in range(len(grid)): #vypise matici
+    #     print(grid[i])
 
-    input('pauza')      #---PAUZA---
+    plt.imshow(grid, interpolation='none') #vykresli matici
+    f.canvas.draw()
+
+    # input('pauza')      #---PAUZA---
 
     grid_new = numpy.zeros((width, height), int)  # nova matice (na zacatku vynulovana)
 
